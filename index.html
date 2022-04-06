@@ -6,10 +6,10 @@
     <body>
         <form id="cool">
             <p>Celsius temperature: 
-                <input type="text" id="textTempC" size="4" onchange=""/>
+                <input type="text" id="textTempC" size="4" onchange='textTempF.value = Math.round(convertC2F(textTempC.value))'/>&#176; C
             </p>
             <p>Fahrenheit temperature:
-                <input type="text" id="textTempF" size="4" onchange=""/>
+                <input type="text" id="textTempF" size="4" onchange='textTempC.value = Math.round(convertC2F(textTempF.value))'/>&#176; F
             </p>
         </form>
     </body>
